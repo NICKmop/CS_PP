@@ -1,0 +1,10 @@
+! -- 장고 기본 세팅 
+pip install django #장고 설치
+pip install djangorestframework #DRF설치
+C:\~\django-react\backend> django-admin startproject CSpp_api_main -> 프로젝트 생성
+python manage.py startapp 앱네임 생성
+
+! -- 장고 기본 내장 디비 이용
+python manage.py migrate
+python manage.py createsuperuser	# 관리자 계정 생성
+python manage.py runserver
