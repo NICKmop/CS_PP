@@ -32,6 +32,7 @@ body {
     -moz-transform:rotate(180deg);
     -webkit-transform:rotate(180deg);
     color:#35C4F0;
+    font-size: 30px;
   }
   
   #load div:nth-child(2) {
