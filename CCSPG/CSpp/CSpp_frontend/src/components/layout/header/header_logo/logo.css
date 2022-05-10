@@ -1,0 +1,58 @@
+.logo-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+}
+.logo-wrapper #logo-webbab {
+  overflow: visible;
+}
+.logo-wrapper #logo-webbab .word {
+  fill: black;
+  opacity: 0.99;
+}
+.logo-wrapper #logo-webbab #mask #alpha {
+  fill: black;
+}
+.logo-wrapper #iso {
+  fill: black;
+  opacity: 0.99;
+  mask: url(#mask);
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/458169.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*# sourceMappingURL=logo.css.map */

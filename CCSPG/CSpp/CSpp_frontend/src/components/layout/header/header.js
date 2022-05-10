@@ -1,13 +1,20 @@
 import React from 'react';
-import './header.css'
+import './header.css';
+import Logoheader from './header_logo/logo';
 
-const Header = () => {
+const SideHeader = () => {
     return (
         <header className='header'>
-            <div className='contents'>
-                <h2 className='title'>헤더</h2>
+            <div className='header_contents'>
+                <div className='nav'>
+                    <Logoheader/>
+                </div>
+                <div className='nav'>
+                </div>
+                <div className='nav'>
+                </div>
             </div>
         </header>
     )
 }
-export default Header;
+export default SideHeader;

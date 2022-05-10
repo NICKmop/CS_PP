@@ -1,0 +1,80 @@
+
+// YOU CAN CHANGE THE COLOR OF LOGO HERE.
+
+$color-logo: black;
+
+// MIXIN
+
+@mixin center() {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// LOGO STYLES
+
+.logo-wrapper {
+  @include center();
+  
+  //Logo responsive, just change the value of "max-width" for another size.
+  
+  width: 100%;
+  max-width: 380px;
+  height: auto;
+  
+  #logo-webbab {
+    overflow: visible;
+    .word {
+      fill: $color-logo;
+      opacity: 0;
+    }
+    #mask {
+      #alpha {
+        fill: #fff;
+      }
+    }
+  }
+  #iso {
+    fill: $color-logo;
+    opacity: 0;
+    mask: url(#mask);
+  }
+}
+
+// GENERAL
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  //background-color: #960051;
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/953/458169.jpg);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+////////////////////////// Control buttons - delete
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
