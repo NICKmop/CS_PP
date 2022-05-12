@@ -7,7 +7,7 @@ const SideHeader = () => {
         <header className='header'>
             <div className='header_contents'>
                 <div className='nav'>
-                    <Logoheader/>
+                    <link rel='#'><Logoheader/></link>
                 </div>
                 <div className='nav'>
                     <nav style={{height:'18%'}}></nav>
