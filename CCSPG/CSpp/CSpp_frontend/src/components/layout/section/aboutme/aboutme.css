@@ -2,3 +2,20 @@
     border: 1px solid black;
     height: 100%;
 }
+.aboutmeContent_main {
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: left;
+    font-size: 2em;
+}
+.wordCloud {
+    /* border: 1px solid black; */
+    margin-left: 11%;
+    font-size: 2em;
+    padding: 0;
+    top: 0;
+    bottom: 0;
+}
