@@ -1,4 +1,20 @@
-#Mysills_content {
+#aboutmeContent {
     border: 1px solid black;
     height: 100%;
+    
+}
+.MyskillsBody {
+    display: flex;
+    height: 100%;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    font-size: 2em;
+    flex-direction: column;
+    background-color: #aaa;
+}
+.MyskillsBody_cot {
+    margin: 100px;
+    padding-left: 93px;
 }

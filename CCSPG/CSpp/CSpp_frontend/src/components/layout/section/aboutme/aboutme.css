@@ -1,19 +1,20 @@
 #aboutmeContent {
     border: 1px solid black;
     height: 100%;
+    background-color: #aaa;
 }
 .aboutmeContent_main {
     display: flex;
     height: 100%;
     border: 1px solid black;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     text-align: left;
     font-size: 2em;
 }
 .wordCloud {
     /* border: 1px solid black; */
-    margin-left: 11%;
+    /* margin-left: 11%; */
     font-size: 2em;
     padding: 0;
     top: 0;

@@ -5,10 +5,15 @@
     align-items: center;
     justify-content: space-evenly;
     text-align: left;
+    background-color: #aaa;
 }
 #layout_content .layoutContent:nth-child(1) {
+    color: white;
+    text-shadow: -2px -2px 1px #aaa,
+    0px 4px 1px rgba(0,0,0,0.5),
+    4px 4px 5px rgba(0,0,0,0.7),
+    0px 0px 7px rgba(0,0,0,0.4);
+}
+/* #layout_content .layoutContent:nth-child(2) {
+} */
 
-}
-#layout_content .layoutContent:nth-child(2) {
-    
-}

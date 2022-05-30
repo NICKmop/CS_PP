@@ -1,5 +1,6 @@
 import React from "react";
 import './layoutMain.css';
+import codingImg from '../../src_assets/codingImg.png'
 import SideHeader from "./header/header";
 import Aboutme from "./section/aboutme/aboutme";
 import Contact from "./section/Contact/Contact";
@@ -17,7 +18,7 @@ const Layout = () => {
                     <h1>웹 개발자 포트폴리오 입니다! (Web Developer Page!)</h1>
                 </div>
                 <div className="layoutContent">
-                    <h1>사진 정보 등록.</h1>
+                    <img src={codingImg} className='codingImg' alt="React"/>
                 </div>
             </div>
             <Aboutme/>

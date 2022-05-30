@@ -1,12 +1,11 @@
-import React, { useRef, useEffect } from "react";
+import React from "react";
 import ReactWordcloud from 'react-wordcloud';
 import './aboutme.css';
-
 
 const callbacks = {
     // getWordColor: word => word.value > 50 ? "blue" : "red",
     onWordClick: console.log,
-    onWordMouseOver: console.log,
+    onWordMouseOver: console.log
     // getWordTooltip: word => `${word.text} (${word.value}) [${word.value > 50 ? "good" : "bad"}]`,
   }
   const options = {
@@ -16,7 +15,7 @@ const callbacks = {
     padding: 10,
     transitionDuration: 500
   };
-  const size = [600, 600];
+  const size = [650, 800];
   const words = [
         {
             text: 'React',
@@ -56,33 +55,7 @@ const callbacks = {
         },
     ];
 
-//hoisting
-function useInterval(callback, delay) {
-    const savedCallback = useRef();
-
-    // Remember the latest function.
-    useEffect(() => {
-        savedCallback.current = callback;
-    }, [callback]);
-
-    // Set up the interval.
-    useEffect(() => {
-        function tick() {
-        savedCallback.current();
-    }
-    if (delay !== null) {
-        let id = setInterval(tick, delay);
-        return () => clearInterval(id);
-    }
-}, [delay])};
-
 function SimpleWordcloud() {
-        // <ReactWordcloud
-        //     callbacks={callbacks}
-        //     options={options}
-        //     size={size}
-        //     words={words}
-        // />
     return (
         <ReactWordcloud
             callbacks={callbacks}
@@ -99,7 +72,9 @@ const Aboutme = () => {
             <div className="aboutmeContent_main">
                 <div className="textZone">
                     <h1>With My Self & I </h1>
-                    <h5>제 소개를 시작 하도록 하겠습니다</h5>
+                    <h5>저는 프론트엔드 개발자가 되기 위해 항상 자기개발 및 현재 기술동향에<br/> 있어 뒤쳐지는 일없이
+                        공부하며 원하는 형태로 구현이 가능 하게 하여      
+                    </h5>
                 </div>
                 <div className="wordCloud">
                     <SimpleWordcloud/>
