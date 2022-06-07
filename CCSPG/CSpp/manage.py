@@ -25,8 +25,10 @@ def main():
             os.chdir(project_root);
             sys.argv.pop(2);
     except IndexError:
+        print("1")
         execute_from_command_line(sys.argv);
     else:
+        print("2")
         execute_from_command_line(sys.argv);
 
 
